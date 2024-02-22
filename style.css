@@ -1,0 +1,156 @@
+@font-face {
+    font-family: Norse-Bold;
+    src: url(./fonts/Norse-Bold.otf);
+}
+
+* {
+    font-family: sans-serif;
+}
+
+h1 {
+    font-family: Norse-Bold, sans-serif;
+    color: #ffffff;
+}
+
+.main {
+    display: flex;
+    height: 100vh;
+}
+
+.left {
+    width: 30vw;
+    background-image: url("images/background.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
+.right {
+    width: 70vw;
+    background-color: #f9fafb;
+}
+
+.header {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    height: 25vh;
+    padding: 30px;
+}
+
+.header p {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.form-fields {
+    background-color: #ffffff;
+    padding: 30px;
+    -webkit-box-shadow: 0px 2px 8px 0px rgba(47, 47, 47, 0.5);
+    box-shadow: 0px 2px 8px 0px rgba(47, 47, 47, 0.5);
+}
+
+.logo-section {
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    height: 150px;
+    margin-top: 20vh;
+}
+
+.logo-image {
+    height: 100px;
+}
+
+.logo-text {
+    font-size: 100px;
+}
+
+.columns {
+    display: flex;
+    flex-direction: row;
+    gap: 50px;
+}
+
+.column {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.field-container {
+    display: flex;
+    flex-direction: column;
+}
+
+.field-container label {
+    font-size: 10px;
+    color: rgb(53, 52, 52);
+    font-weight: 900;
+    letter-spacing: 2px;
+}
+
+.form-fields p {
+    font-size: 20px;
+    margin: 0 0 20px 0;
+}
+
+.form-submit {
+    padding: 30px;
+}
+
+input {
+    -webkit-appearance: none;
+    /* box-shadow: none !important; */
+    border: 1px solid rgb(216, 213, 213);
+    border-radius: 3px;
+    font-size: 13px;
+    width: 220px;
+    height: 20px;
+}
+
+input:focus {
+    outline: none !important;
+    border: 1px solid rgba(35, 35, 244, 0.997);
+    box-shadow: 0 0 10px #719ECE;
+}
+
+input.error {
+    border-color: red;
+
+    &:valid {
+        border-style: auto;
+        border-color: inherit;
+    }
+}
+
+.create-account {
+    -webkit-box-shadow: 0px 2px 8px 0px rgba(47, 47, 47, 0.5);
+    box-shadow: 0px 2px 8px 0px rgba(47, 47, 47, 0.5);
+    color: white;
+    background-color: #596d48;
+    padding: 12px 50px;
+    border: none;
+    border-radius: 6px;
+    font-weight: 900;
+    margin-bottom: 10px;
+    cursor: pointer;
+}
+
+.create-account[disabled] {
+    background-color: rgb(216, 213, 213);
+}
+
+.form-submit a {
+    color: #596d48;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+span#password-check {
+    color: red;
+    font-size: 12px;
+    height: 12px;
+}

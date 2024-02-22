@@ -4,12 +4,72 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="normalize.css">
     <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
     <title>Odin Sign Up</title>
 </head>
 
 <body>
+    <div class="main">
+        <div class="left">
+            <div class="logo-section">
+                <img src="images/odin-lined.png" alt="" class="logo-image">
+                <h1 class="logo-text">ODIN</h1>
+            </div>
+        </div>
+        <div class="right">
+            <div class="header">
+                <p>This is not a real online service! You know you need something like this in your life to
+                    help you realize your deepest dreams. Sign up <em>now</em> to get started.</p>
+                <p>You <em>know</em> you want to.</p>
+            </div>
+            <div class="form">
+                <form action="#" method="post">
+                    <div class="form-fields">
+                        <p>Let's do this!</p>
+                        <div class="columns">
+                            <div class="column">
+                                <div class="field-container">
+                                    <label for="first-name">FIRST NAME</label>
+                                    <input type="text" name="first-name" id="first-name" tabindex="1" required>
+                                </div>
+                                <div class="field-container">
+                                    <label for="email">EMAIL</label>
+                                    <input type="email" name="email" id="email" tabindex="3" required>
+                                </div>
+                                <div class="field-container">
+                                    <label for="password">PASSWORD</label>
+                                    <input type="password" name="password" id="password" tabindex="5" onkeyup='checkPassword();' required>
+                                </div>
+                            </div>
+                            <div class="column">
+                                <div class="field-container">
+                                    <label for="last-name">LAST NAME</label>
+                                    <input type="text" name="last-name" id="last-name" tabindex="2" required>
+                                </div>
+                                <div class="field-container">
+                                    <label for="phone-number">PHONE NUMBER</label>
+                                    <input type="tel" name="phone-number" id="phone-number" tabindex="4" required>
+                                </div>
+                                <div class="field-container">
+                                    <label for="confirm-password">CONFIRM PASSWORD</label>
+                                    <input type="password" name="confirm-password" id="confirm-password" tabindex="6" onkeyup='checkPassword();' required>
+                                </div>
+                            </div>
+                        </div>
+                        <span id="password-check"></span>
+                    </div>
+                    <div class="form-submit">
+                        <button type="submit" class="create-account">Create Account</button>
+                        <p>Already have an account? <a href="#">Log in</a></p>
+                    </div>
+                </form>
 
+            </div>
+        </div>
+    </div>
 </body>
 
 </html>
